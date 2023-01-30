@@ -229,6 +229,55 @@ a.nav-mobile-button {
     border: solid 2px white;
 }
 
+#nav-header-menu-mobile .nav-header-menu-mobile-links {
+    position: relative;
+    list-style: none;
+    background: black ;
+    margin: 0;
+    padding: 16px;
+    font-size: 14px;
+}
+
+#nav-header-menu-mobile .nav-header-menu-mobile-links li a {
+    display: block;
+    min-height: 39px;
+    line-height: 23px;
+    text-decoration: none;
+    padding: 8px 20px 8px 15px;
+    margin: 0;
+    color: white;
+}
+
+#nav-header-menu-mobile .nav-header-menu-mobile-links li a fa-icon {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+    float: left;
+}
+
+#nav-header-menu-mobile .nav-header-menu-mobile-links li a span {
+    margin: 0;
+    font-weight: 600;
+}
+
+
+#nav-header-menu-mobile .nav-header-menu-mobile-links:hover {
+    --bs-dropdown-link-hover-bg: #1639D6;
+}
+
+.dropdown-divider {
+    background-color: white;
+}
+
+.nav-header-menu-mobile-thanks {
+    margin: 0;
+    font-weight: 600;
+    color: white;
+    font-size: 17px;
+
+}
+
 
 
 

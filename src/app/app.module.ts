@@ -8,7 +8,7 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule, FaIconLibrary, FaConfig } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faSignIn } from '@fortawesome/free-solid-svg-icons';
+
 
 import { IndexComponent } from './index/index/index.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
