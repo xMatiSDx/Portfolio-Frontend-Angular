@@ -16,7 +16,6 @@
                 <div ngbDropdown  class="nav-item position-static d-md-none">
                     <button class="nav-header-menu-switch" role="button" aria-expanded="false" id="dropdownMenu"
                         ngbDropdownToggle>
-                        <input type="checkbox">
                         <span> 
                             <span class="hamburger-top-bread"></span>
                             <span class="hamburger-patty"></span>
@@ -64,9 +63,7 @@
                         <a class="nav-link btn d-none d-md-inline" role="button" href="#">
                             <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
                         </a>
-                        <a class="nav-link btn" role="button" href="#">
-                            <fa-icon [icon]="['fas', 'sign-in']"></fa-icon>
-                        </a>
+                        <app-login-button class="login-btn"></app-login-button>
                 </nav>
             </div>
         </div>

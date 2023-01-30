@@ -1,0 +1,118 @@
+<!--- BANNER --->
+<section class="banner">
+    <div class="container default-banner">
+        <div style="display: flex; align-content: center; justify-content:center; margin: auto; padding: 2vw">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div style="display: flex ; justify-content:center; align-content: center; flex-direction: column; flex-wrap: wrap;">
+                        <div class="row first-row">
+                            <div>
+                                <span>
+                                    Hello,
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row second-row">
+                            <div class="col">
+                                <span>
+                                    I'm
+                                </span>
+                            </div>
+                            <div class="col-sm-12 option">    
+                                <ul>
+                                    <li>
+                                        <span>Matias Ezequiel Arias</span>
+                                    </li>
+                                    <li>
+                                        <span>Full Stack Developer Jr</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12" style="margin-top: 5px; margin-bottom: 5px;">
+                    <div style="display: flex ; justify-content:center; align-content: center; flex-direction: column; flex-wrap: wrap;">
+                        <div class="row first-row">
+                            <div class="textbox">
+                                <span style="font-size: 15px; color: white">
+                                    <b>We can make a lot of wonderful content together. After one or two cups of coffe ☕, mates 🧉 a bit o creativity 💡 and some lines of code 👨‍💻 ideas and 
+                                    concepts become clear and take shape.</b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12" style="margin-top: 5px; margin-bottom: 5px;">
+                    <div style="display: flex; justify-content: space-around;">
+                        <div class="row">
+                            <div class="col">
+                                <a href="" class="btn ContactButton">
+                                    <b>CONTACT ME</b>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="" class="btn DownloadButton">
+                                    <b>DOWNLOAD CV</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+         <!--- CHANGE BANNER PICTURE --->
+         <div style="display: block; position:relative">
+            <app-edit-button type="bancam-box" (btnClick)="changePicture()" figure="camera"></app-edit-button>
+            <!-- <input type="file"> -->
+        </div>
+    </div>
+</section>
+<!--- MAIN PROFILE --->
+<section class="profile" style="background-color: black;">
+    <div class="container">
+        <div class="row" style="display: flex; flex-direction: row; align-items: center;">
+            <!--- PROFILE PICTURE --->
+            <div class="col-lg-3" style="display:flex; align-self:center; justify-content: center; margin-top: 10px; margin-bottom: 10px;">
+                <div style="display: block; position:relative">
+                    <picture>
+                        <img src="./assets/images/profilepicture.jpg" style=" border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-top-left-radius: 50%; height: 168px; width: 168px">
+                    </picture>
+                    <!--- CHANGE PROFILE PICTURE --->
+                    <app-edit-button type="cam-box" (btnClick)="changePicture()" figure="camera"></app-edit-button>
+                </div>
+            </div>
+            <!--- PROFILE PRESENTATION --->
+            <div class="col-lg-9 section-title" style="align-content: center; display: flex; flex-direction: column; ">
+                <!--- PROFILE NAME --->
+                <div class="row h1" style="display: flex; flex-wrap: nowrap;">
+                    <div class="col-lg-12" style="display:flex; justify-content: center; align-content: center;">
+                        <div style="display: block; position: relative; text-align: center; width: 100%;">
+                            <span style="width: 100%;">
+                                <b style="color: white;"> WHO IS THIS GUY?</b>
+                            </span>
+                        </div> 
+                        <!--- PROFILE NAME EDIT BUTTON --->
+                        <app-edit-button type="edit-box" (btnClick)="editContent()" figure="pencil"></app-edit-button>
+                    </div>
+                </div>
+                <!--- BLUE LINE --->
+                <div class="after" style="display:flex; align-items:center ;"></div>  
+                <!--- ABOUT TEXT --->
+                <div class="row" style="display:flex; flex-wrap: nowrap;">
+                    <div class="col-lg-12"  style="align-content: center; display:flex; justify-content: center; padding-top: 10px;">
+                        <div style="display: block; position: relative; text-align: center;">
+                            <p style="color: white; text-align: justify;">Hi... again... As you will have noticed, my name is Matias Ezequiel Arias and I'm a Full Stack Developer Jr from Argentina. And this is what i haven't told you yet: For the last seven years 
+                            i have performed myself in different branches of the comercial sector. Now I'm looking to test myself in new challenges.
+                            </p>                                                        
+                        </div>
+                        <!--- ABOUT TEXT EDIT BUTTON --->
+                        <app-edit-button type="edit-box" (btnClick)="editContent()" figure="pencil"></app-edit-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,151 @@
+/* BANNER CSS */
+.banner {
+    display: flex;
+    background-color: black;
+}
+
+/* DEFAULT BANNER CSS*/
+.default-banner {
+    display: flex;
+}
+
+section {
+  background-color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.profile .container{
+  background-color:  #111111;
+  border-radius: 15px;
+}
+
+.first-row span {
+    font-weight: bolder;
+    color: white;
+    font-size: 5vw;
+}
+
+.second-row {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: fit-content;
+    max-height: 7vw;
+    overflow: hidden;
+}
+
+.second-row .col {
+    padding-right: 0px;
+}
+
+.second-row span {
+    font-weight: bolder;
+    color: white;
+    font-size: 5vw;
+}
+
+.second-row ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: bolder;
+    color: #1639D6;
+    font-size: 5vw;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.option li {
+    list-style: none;
+    top: 0;
+    position: relative;
+    animation: slide 12s steps(2) infinite;
+}
+
+.option li span {
+    position: relative;
+    color: #1639D6;
+}
+
+/*--- BLUE POINTER ---*/
+.option li span:after 
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  border-left: 6px solid #1639D6;
+  animation: typing 6s steps(19) infinite;
+}
+
+/*--- .option li ANIMATION ---*/
+@keyframes slide 
+{
+  100% {
+    top: -15vw;
+  }
+}
+
+/*--- BLUE POINTER ANIMATION ---*/
+@keyframes typing 
+{
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/*--- CONTACT BUTTON ---*/
+.ContactButton {
+  border: 3px #1639D6 solid;
+  cursor: pointer;
+  width: auto;
+}
+
+.ContactButton b {
+  color: white;
+}
+
+.ContactButton:hover {
+  background: #1639D6;
+}
+
+/*--- DOWNLOAD BUTTON ---*/
+
+.DownloadButton {
+  border: 3px #1639D6 solid;
+  background: #1639D6;
+  cursor: pointer;
+  width: auto;
+}
+
+.DownloadButton b{
+  color: rgb(0, 0, 0);
+}
+
+.DownloadButton:hover {
+  border: 3px solid #1639D6;
+  background: #000000;
+} 
+
+.DownloadButton:hover b {
+  color: white;
+}
+
+/*--- BLUE LINE BETWEEN NAME AND ABOUT ---*/
+div.section-title .after:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #1639D6;
+    position: relative;
+    flex-wrap: nowrap!important;
+}
+
