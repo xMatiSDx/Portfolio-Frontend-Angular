@@ -1,0 +1,24 @@
+<div class="modal-header" id="content">
+	<h4 class="modal-title" id="modal-basic-title">Owner's Login</h4>
+	<a role="button" class="btn-close-modal" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+		<fa-icon [icon]="['fas' , 'close']"></fa-icon>
+	</a>
+</div>
+<div class="modal-body">
+	<form formGroup="loginForm">
+		<div class="input-group">
+			<div class="input-group-email">
+				<input type="text" class="input" placeholder=" " formControlName="email" required>
+				<label class="placeholder">Email</label>
+			</div>
+			<div class="input-group-password">
+				<input type="password" class="input" placeholder=" " formControlName="password" required>
+				<label class="placeholder">Password</label>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn cancel-btn" (click)="activeModal.close('Close click')">Cancel</button>
+	<button type="submit" class="btn login-btn" (click)="onEnviar($event)">Login</button>
+</div>

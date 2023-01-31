@@ -1,0 +1,108 @@
+.modal-header {
+    background: #1639D6;
+    border: solid 1px white;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+}
+
+.modal-header h4 {
+    font-weight: 600;
+    color: white;
+}
+
+.btn-close-modal {
+    color: white;
+    font-size: 20px;
+}
+
+.btn-close-modal:hover {
+    color: red;
+}
+
+.modal-body {
+    background: black;
+}
+
+
+.modal-body .input-group input {
+    padding: 10px;
+    background: black;
+    border-radius: 0;
+    outline: none;
+    color: white;
+    border: solid 1px #1639D6;
+    width: 100%;
+}
+
+.modal-body .input-group .input-group-email,
+.modal-body .input-group .input-group-password {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+.input-group-email .placeholder {
+    position: absolute;
+    top:20px;
+    left: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0px 5px;
+    transition: 0.3s;
+    pointer-events: none;
+    color: white;
+    background-color: black;
+    opacity: 1;
+}
+
+.input-group-email .input:focus + .placeholder,.input-group-email .input:not(:placeholder-shown) + .placeholder {
+    top: -3px;
+    background-color: black;
+    opacity: 1;
+}
+
+.input-group-password .placeholder {
+    position: absolute;
+    top:85px;
+    left: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0px 5px;
+    transition: 0.3s;
+    pointer-events: none;
+    color: white;
+    background-color: black;
+    opacity: 1;
+}
+
+.input-group-password .input:focus + .placeholder,.input-group-password .input:not(:placeholder-shown) + .placeholder {
+    top: 60px;
+    background-color: black;
+    opacity: 1;
+}
+
+.modal-footer {
+    background-color: black;
+    justify-content: space-between;
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+    padding: var(--bs-modal-padding);
+}
+
+.modal-footer .btn {
+    padding: 10px;
+}
+
+.modal-footer .cancel-btn{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    width: 40%;
+}
+
+.modal-footer .login-btn{
+    background-color: #1639D6;
+    color: white;
+    font-weight: 600;
+    width: 40%;
+}

@@ -5,19 +5,25 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { FontAwesomeModule, FaIconLibrary, FaConfig } from '@fortawesome/angular-fontawesome';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 import { IndexComponent } from './index/index/index.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
+import { CoverComponent } from './cover/cover/cover.component';
+import { EditButtonComponent } from './buttons/edit-button/edit-button.component';
+import { LoginButtonComponent } from './buttons/login-button/login-button.component';
+import { LoginModalComponent } from './login/login-modal/login-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    NavbarComponent
+    NavbarComponent,
+    CoverComponent,
+    EditButtonComponent,
+    LoginButtonComponent,
+    LoginModalComponent
   ],
   imports: [
     BrowserModule,
@@ -29,8 +35,6 @@ import { NavbarComponent } from './navbar/navbar/navbar.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(library: FaIconLibrary, faConfig: FaConfig) {
-    library.addIconPacks(fas, fab);
-    faConfig.fixedWidth = true;
+  constructor() {
   };
 }
