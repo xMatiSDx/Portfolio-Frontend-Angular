@@ -1,23 +1,24 @@
-	<div class="modal-header" id="content">
-		<h4 class="modal-title" id="modal-basic-title">Owner's Login</h4>
-		<button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
-	</div>
-	<div class="modal-body">
-		<form formGroup="login">
-			<div class="mb-3">
-				<div class="input-group">
-                    <label class="uname" for="uname" style="display: flex; width: 100%; color: white;"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" formControlName="email" required>
-				</div>
-                <div>
-                    <label class="psw" for="psw" style="display: flex; width: 100%; color: white;"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" formControlName="password" required
-              style="display: flex; width: 100%;">
-                </div>
+<div class="modal-header" id="content">
+	<h4 class="modal-title" id="modal-basic-title">Owner's Login</h4>
+	<a role="button" class="btn-close-modal" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+		<fa-icon [icon]="['fas' , 'close']"></fa-icon>
+	</a>
+</div>
+<div class="modal-body">
+	<form formGroup="loginForm">
+		<div class="input-group">
+			<div class="input-group-email">
+				<input type="text" class="input" placeholder=" " formControlName="email" required>
+				<label class="placeholder">Email</label>
 			</div>
-		</form>
-	</div>
-	<div class="modal-footer">
-		<button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Save</button>
-	</div>
-
+			<div class="input-group-password">
+				<input type="password" class="input" placeholder=" " formControlName="password" required>
+				<label class="placeholder">Password</label>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn cancel-btn" (click)="activeModal.close('Close click')">Cancel</button>
+	<button type="submit" class="btn login-btn" (click)="onEnviar($event)">Login</button>
+</div>

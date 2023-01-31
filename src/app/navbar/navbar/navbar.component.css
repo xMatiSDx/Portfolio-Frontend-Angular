@@ -2,20 +2,13 @@
     box-sizing: border-box;
     padding: 0;
     background-color: black;
-}
-
-nav.navbar .navbar-brand  img, 
-nav.navbar .navbar-item  img {
     height: 50px;
 }
 
-@media screen and (min-width: 768px) {
-    nav.navbar .navbar-brand img,
-    nav.navbar .navbar-item  img {
-        height: 70px
-    }
+nav.navbar .navbar-brand  img, 
+nav.navbar .navbar-item  img{
+    max-height: 50px;
 }
-
 
 
 /*--- #YoProgramo---*/
@@ -39,11 +32,10 @@ nav.navbar div a.navbar-item {
     position: absolute;
     top:0;
     padding: 0;
-    right: 55px;
-    height: 45px;
-    width: 45px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
 }
-
 
 .hamburger-top-bread,.hamburger-patty,.hamburger-bottom-bread {
     position: absolute;
