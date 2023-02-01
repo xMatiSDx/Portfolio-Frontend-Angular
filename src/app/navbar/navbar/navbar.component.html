@@ -2,21 +2,22 @@
     <nav class="navbar navbar-expand-lg" style="padding-left: 10px; padding-right: 10px;">
         <div class="container-fluid justify-content-between">
             <div class="d-flex">
-            <a class="navbar-item d-sm-flex d-none aling-items-center" href="https://argentinaprograma.inti.gob.ar/">
-                <img src="./assets/images/APLogo.png" alt="Argentina Programa Logo">
-            </a>
-            <a class="navbar-item w-auto my-auto d-none d-lg-inline" href="https://argentinaprograma.inti.gob.ar/">
-                #YoProgramo
-            </a>
-        </div>
+                <a class="navbar-item d-sm-flex d-none aling-items-center"
+                    href="https://argentinaprograma.inti.gob.ar/">
+                    <img src="./assets/images/APLogo.png" alt="Argentina Programa Logo">
+                </a>
+                <a class="navbar-item w-auto my-auto d-none d-lg-inline" href="https://argentinaprograma.inti.gob.ar/">
+                    #YoProgramo
+                </a>
+            </div>
             <a class="navbar-brand" href="#">
                 <img src="assets\images\brand.png" alt="Full Stack Jr. Logo">
             </a>
             <div class="nav-header-menu-wrapper">
-                <div ngbDropdown  class="nav-item position-static d-md-none">
+                <div ngbDropdown class="nav-item position-static d-md-none">
                     <button class="nav-header-menu-switch" role="button" aria-expanded="false" id="dropdownMenu"
                         ngbDropdownToggle>
-                        <span> 
+                        <span>
                             <span class="hamburger-top-bread"></span>
                             <span class="hamburger-patty"></span>
                             <span class="hamburger-bottom-bread"></span>
@@ -30,45 +31,48 @@
                                     <fa-icon [icon]="['fas', 'envelope']"></fa-icon>
                                 </div>
                                 <p class="nav-header-menu-mobile-guest-title">Get in Touch!</p>
-                                <p class="nav-header-menu-mobile-guest-text">You can reach out by pressing the correct button below. Choose wisely.</p>
+                                <p class="nav-header-menu-mobile-guest-text">You can reach out by pressing the correct
+                                    button below. Choose wisely.</p>
                                 <div class="nav-header-menu-mobile-buttons">
                                     <ul>
                                         <li>
-                                            <a class="nav-link btn nav-mobile-button nav-mobile-button-filled" role="button" href="#">Let's do it!</a>
+                                            <a class="nav-link btn nav-mobile-button nav-mobile-button-filled"
+                                                role="button" href="#">Let's do it!</a>
                                         </li>
                                         <li>
-                                            <a class="nav-link btn nav-mobile-button nav-mobile-button-outline" role="button" href="#">Don't be shy;)</a>
+                                            <a class="nav-link btn nav-mobile-button nav-mobile-button-outline"
+                                                role="button" href="#">Don't be shy;)</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <ul class="nav-header-menu-mobile-links">
-                                <li class="nav-mobile-menu-selected">
-                                    <a class="dropdown-item" href="#">
+                                <li>
+                                    <a class="dropdown-item" routerLink="" routerLinkActive="active">
                                         <fa-icon [icon]="['fas','home']"></fa-icon>
                                         <span>Home</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="#" routerLinkActive="active">
                                         <fa-icon [icon]="['fas','briefcase']"></fa-icon>
                                         <span>Experience</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="#" routerLinkActive="active">
                                         <fa-icon [icon]="['fas','user-graduate']"></fa-icon>
                                         <span>Education</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="#" routerLinkActive="active">
                                         <fa-icon [icon]="['fas','laptop-code']"></fa-icon>
                                         <span>Skills</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="#" routerLinkActive="active">
                                         <fa-icon [icon]="['fas','file-code']"></fa-icon>
                                         <span>Projects</span>
                                     </a>
@@ -77,25 +81,55 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li style="text-align: center;">
-                                    <span class="nav-header-menu-mobile-thanks">Thanks for your visit! Hope you enjoyed.</span>
+                                    <span class="nav-header-menu-mobile-thanks">Thanks for your visit! Hope you
+                                        enjoyed.</span>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
                 <nav id="nav-header-menu">
-                        <a class="nav-link btn d-none d-md-inline" role="button" href="#">
-                            <fa-icon [icon]="['fab', 'github']"></fa-icon>
-                        </a>
-                        <a class="nav-link btn d-none d-md-inline" role="button" href="#">
-                            <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
-                        </a>
-                        <a class="nav-link btn d-none d-md-inline" role="button" href="#">
-                            <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
-                        </a>
-                        <app-login-button class="login-btn"></app-login-button>
+                    <a class="nav-link btn d-none d-md-inline" role="button" href="#">
+                        <fa-icon [icon]="['fab', 'github']"></fa-icon>
+                    </a>
+                    <a class="nav-link btn d-none d-md-inline" role="button" href="#">
+                        <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
+                    </a>
+                    <a class="nav-link btn d-none d-md-inline" role="button" href="#">
+                        <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+                    </a>
+                    <app-login-button class="login-btn"></app-login-button>
                 </nav>
             </div>
         </div>
     </nav>
+    <div class="nav-menu d-none d-md-block">
+        <ul class="nav-menu-list">
+            <li class="nav-menu-item">
+                <a routerLink="" routerLinkActive="active">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" routerLinkActive="active">
+                    <span>Experience</span>
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" routerLinkActive="active">
+                    <span>Education</span>
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" routerLinkActive="active">
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" routerLinkActive="active">
+                    <span>Projects</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </header>
