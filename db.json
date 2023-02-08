@@ -1,0 +1,31 @@
+{
+  "exp": [
+    {
+      "id": 1,
+      "logo": "../assets/images/explogos/garavano.jpg",
+      "company": "TRES MARIAS SA S.A.",
+      "from": "2013-10-21T13:28:06.419Z",
+      "to": "2013-10-21T13:28:06.419Z",
+      "position": "SECRETARIO ADMINISTRATIVO, NIVEL MEDIO",
+      "description": "Tareas básicas administrativas y de contabilidad. Gestión de documentación. Elaboración de informes, planificación financiera. Conduccion y toma de decisiones. Facturacion y gestion de cobros y pagos. Manejo de transacciones financieras. Racionalización de gastos. Relación directa con clientes, proveedores y entidades financieras. Buena disposición para el aprendizaje de todo tipo de tareas administrativas. Conocimiento en programas de gestión. Comprometido y responsable ante la iniciativa empresarial velando por sus intereses. Capacidad de respuesta en situaciones de tensión. Resolución de conflictos. Participación activa en la junta directiva como asistente de gerencia. Responsable del seguimiento de presupuestos y elaboración de informes de los egresos e ingresos de la empresa."
+    },
+    {
+      "id": 2,
+      "logo": "../assets/images/explogos/garavano.jpg",
+      "company": "HELADOS GARAVANO S.R.L",
+      "from": "2013-10-21T13:28:06.419Z",
+      "to": "2013-10-21T13:28:06.419Z",
+      "position": "ENCARGADO DE ESTABLECIMIENTO COMERCIAL",
+      "description": "Supervisión, dirección y guía de las actividades del personal. Distribución de los turnos. Capacitación de ingresantes. Trabajo en Equipo y delegación de tareas. Gerencia de Caja, apertura y cierre, control de cambio y arqueo. Gestión y planificación de inventarios. Recepción y control de pedidos. Búsqueda, desarrollo y aplicación innovaciones de en base a los intereses del cliente y el personal. Elaboración de estrategias de venta. Cocina: Elaboración de comidas rápidas y aplicación de conocimientos básicos de barismo. Limpieza y mantenimiento del local comercial. Trato directo y constante con el cliente. Mozo, Servicio de mesa. Buena presencia, amabilidad y excelente trato con el cliente como medio para conocer sus intereses, lograr afinidad con los mismos y adaptar el comercio en torno al conocimiento adquirido con el fin de captar potenciales consumidores, aumentar el prestigio de la firma y acrecentar las ventas. Completo dominio de Mesas, Stock, pedidos y distribución del personal a cargo. Alto nivel de respuesta frente a exigencias. Voluntad, responsabilidad y disciplina."
+    },
+    {
+      "id": 3,
+      "logo": "../assets/images/explogos/torobravo.png",
+      "company": "BARSOBA ARY RAMIRO (TORO BRAVO)",
+      "from": "2013-10-21T13:28:06.419Z",
+      "to": "2013-10-21T13:28:06.419Z",
+      "position": "VENDEDOR",
+      "description": "Descripción de Tareas/Responsabilidades: Ventas y asesoramiento. Atención directa a clientes. Supervisión de existencias y elaboración de pedidos. Profundo conocimiento de los productos y sus atributos. Asesoramiento y orientación a clientes. Formación de nuevos vendedores. Trabajo en equipo. Recepción, control y descarga de pedidos. Rápido aprendizaje del stock de productos y sus propiedades resultando en un mayor desempeño a la hora de orientar un cliente, crear una necesidad y cerrar una venta. Dinámico y cooperador. Siempre dispuesto a lograr la superación personal utilizando como medio atención y asesoramiento de calidad, diversas estrategias de venta y reconocimiento de potenciales compradores, logrando de este modo la fidelidad y recomendación de los clientes obteniendo efecto positivo sobre las ventas."
+    }
+  ]
+}

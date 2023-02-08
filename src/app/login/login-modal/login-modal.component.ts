@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 
+//-------------------- ng-bootstrap ---------------------------//
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({

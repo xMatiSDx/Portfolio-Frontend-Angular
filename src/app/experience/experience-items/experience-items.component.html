@@ -1,0 +1,60 @@
+<div id="item" class="container">
+    <div class="row" *ngFor="let data of experiences">
+        <div class="col-lg-3">
+            <div class="picture">
+                <picture>
+                    <img src={{data.logo}}>
+                </picture>
+                <!--- CHANGE EXPERIENCE PICTURE --->
+                <app-edit-button type="cam-box" (btnClick)="changePicture()" figure="camera"></app-edit-button>
+            </div>
+        </div>
+        <!--- EXPERIENCES --->
+        <div class="col-lg-9 section-title">
+            <!--- EXPERIENCE TITLE --->
+            <div class="row h1" >
+                <div class="col-lg-12">
+                    <div class="title" >
+                        <span>
+                            <b>{{data.company}}</b>
+                        </span>
+                        <!--- EXPERIENCE DELETE BUTTON --->
+                        <app-edit-button type="edit-box" (btnClick)="editContent()" figure="remove"></app-edit-button>
+                        <!--- EXPERIENCE EDIT BUTTON --->
+                        <app-edit-button type="edit-box" (btnClick)="editContent()" figure="pencil"></app-edit-button>
+                    </div>
+                    <div style="display: block; position: relative; text-align: start; width: 100%; font-size: 20px;">
+                        <span>
+                            <b>{{data.from}}</b>
+                            <b>{{data.to}}</b>
+                        </span>
+                    </div>
+                    <div style="display: block; position: relative; text-align: start; width: 100%; font-size: 20px;">
+                        <span>
+                            <b>{{data.position}}</b>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--- EXPERIENCE DESCRIPTION --->
+            <div class="row description">
+                <div class="col-lg-12">
+                    <div class="text">
+                        <span>
+                            <p> {{data.description}}</p>
+                        </span>
+                        <!-- - EXPERIENCE DESCRIPTION TEXT EDIT BUTTON -
+                        <div
+                            style="right: 0px; bottom: 0px; position: absolute; border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-top-left-radius: 50%; background-color: rgb(71, 70, 70); height: 40px;">
+                            <a class="btn" role="button" href="#"
+                                style="border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-top-left-radius: 50%;">
+                                <fa-icon icon="pencil" style="color:aliceblue"></fa-icon>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
