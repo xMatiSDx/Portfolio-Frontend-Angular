@@ -2,8 +2,8 @@ export interface Experiences {
     id?: number,
     logo: string,
     company: string,
-    from: string,
-    to: string,
+    from: Date,
+    to: Date,
     position: string,
     description: string,
 }

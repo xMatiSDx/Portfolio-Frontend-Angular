@@ -12,7 +12,7 @@ export class ExperienceComponent implements OnInit {
   public isCollapsed = true;
   experienceForm:FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private expService: ExperienceService) {
+  constructor(private formBuilder: FormBuilder, /*private expService: ExperienceService*/) {
     this.experienceForm= this.formBuilder.group({
       company:['',[Validators.required, Validators.minLength(4)]],
       from:['',[Validators.required, ]],

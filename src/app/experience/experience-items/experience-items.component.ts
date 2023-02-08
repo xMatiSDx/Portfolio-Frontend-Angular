@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 /*------------------ Experience Service ------------------*/
-import { ExperienceService } from '../service/experience.service';
+import { ExperienceItemsService } from '../service/experience-items.service';
 
 /*------------------ Experience Interface ------------------*/
 import { Experiences } from '../interface/experiences';
@@ -15,7 +15,7 @@ export class ExperienceItemsComponent implements OnInit {
 
   experiences: Experiences[] = [];
 
-  constructor(private expService:ExperienceService) { }
+  constructor(private expItemsService: ExperienceItemsService) { }
   
   editContent() {
     console.log('Edit!')
@@ -26,8 +26,8 @@ export class ExperienceItemsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.expService.getExp().subscribe((data) => {
-    this.experiences = data;
+    this.expItemsService.getExp().subscribe((exp) => {
+    this.experiences = exp;
     })
   }
 

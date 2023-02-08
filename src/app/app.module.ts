@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterLinkActive } from '@angular/router'
+import { HttpClientModule } from '@angular/common/http';
 
 //------------------- ng-boostrap -------------------------//
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -39,6 +40,7 @@ import { ExperienceItemsComponent } from './experience/experience-items/experien
     BrowserModule,
     ReactiveFormsModule,
     RouterLinkActive,
+    HttpClientModule,
     NgbModule,
     NgbDropdownModule,
     FontAwesomeModule,
