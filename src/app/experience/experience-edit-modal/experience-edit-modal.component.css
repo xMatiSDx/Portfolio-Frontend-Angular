@@ -1,51 +1,20 @@
-section {
-    background-color: #000000;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.experience .container{
-    background-color:  #111111;
-    border-radius: 15px; 
-}
-
-/*--- SECTION TITLE ---*/
-.title {
-    color: white;
-    text-align: center;
-}
-
-
-/*--- BLUE LINE BETWEEN NAME AND ABOUT ---*/
-div.section-title .after:after {
-    display:flex; 
-    align-items:center;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 5px;
-    background: #1639D6;
-    position: relative;
-    flex-wrap: nowrap!important;
-}
-
 /*------------- FORM --------------*/
 
-/* EXPERIENCE ADD FORM DIV */
-.experienceAddForm {
+/* EXPERIENCE EDIT FORM DIV */
+.experienceEditForm {
     background: #111111;
     border: 1px solid white;
     border-radius: 15px;
 }
 
-.experienceAddForm .form-body {
+.experienceEditForm .form-body {
 
     display: flex; 
     flex-direction: column; 
 }
 
-/* EXPERIENCE ADD FORM TITLE */
-.experienceAddForm .form-title {
+/* EXPERIENCE EDIT FORM TITLE */
+.experienceEditForm .form-title {
     text-align: center; 
     color: white;
     padding-top: 5px;
@@ -53,15 +22,24 @@ div.section-title .after:after {
     margin: 0;
 }
 
+.btn-close-modal {
+    color: white;
+    font-size: 20px;
+}
+
+.btn-close-modal:hover {
+    color: red;
+}
+
 /* EXPERIENCE INPUT GROUP */
 
-.experienceAddForm .input-group {
+.experienceEditForm .input-group {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.experienceAddForm div .col-lg {
+.experienceEditForm div .col-lg {
     display:flex; 
     flex-direction: column;
 }
@@ -97,13 +75,13 @@ div.section-title .after:after {
     margin-left: -13px;
 }
 
-/*--- EXPERIENCE ADD FORM CSS ---*/
+/*--- EXPERIENCE EDIT FORM CSS ---*/
 #experience-form-body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-/*---------- EXPERIENCE ADD FORM PICTURE ----------*/
+/*---------- EXPERIENCE EDIT FORM PICTURE ----------*/
 #experience-form-body .row .col-lg-3 {
     display:flex; 
     align-self:center; 
@@ -135,7 +113,7 @@ div.section-title .after:after {
 
 
 
-/*---------- EXPERIENCE ADD FORM COMPANY ----------*/
+/*---------- EXPERIENCE EDIT FORM COMPANY ----------*/
 #experience-form-body .input-group-company {
     align-content: center; 
     display: flex; 
@@ -195,7 +173,7 @@ div.section-title .after:after {
 }
 
 
-/*---------- EXPERIENCE ADD FORM DATE ----------*/
+/*---------- EXPERIENCE EDIT FORM DATE ----------*/
 #experience-form-body .input-group-date {
     display: block; 
     position: relative; 
@@ -220,7 +198,7 @@ div.section-title .after:after {
     border-bottom: solid 2px white;
 }
 
-/*---------- EXPERIENCE ADD FORM POSITION ----------*/
+/*---------- EXPERIENCE EDIT FORM POSITION ----------*/
 #experience-form-body .input-group-position {
     display: block; 
     position: relative; 
@@ -245,7 +223,7 @@ div.section-title .after:after {
     border-bottom: solid 2px white;
 }
 
-/*--- EXPERIENCE ADD FORM DESCRIPTION ---*/
+/*--- EXPERIENCE EDIT FORM DESCRIPTION ---*/
 #experience-form-body .input-group-description {
     display: flex;
     flex-wrap: nowrap;
@@ -281,7 +259,7 @@ div.section-title .after:after {
     border-bottom: solid 2px white;
 }
 
-/*--- EXPERIENCE ADD FORM CANCEL BTN ---*/
+/*--- EXPERIENCE EDIT FORM CANCEL BTN ---*/
 .modal-footer .cancel-btn{
     background-color: red;
     color: white;

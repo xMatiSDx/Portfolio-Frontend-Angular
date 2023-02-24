@@ -23,6 +23,8 @@ import { LoginButtonComponent } from './buttons/login-button/login-button.compon
 import { LoginModalComponent } from './login/login-modal/login-modal.component';
 import { ExperienceComponent } from './experience/experience/experience.component';
 import { ExperienceItemsComponent } from './experience/experience-items/experience-items.component';
+import { ExperienceEditModalComponent } from './experience/experience-edit-modal/experience-edit-modal.component';
+import { FooterComponent } from './footer/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { ExperienceItemsComponent } from './experience/experience-items/experien
     LoginModalComponent,
     ExperienceComponent,
     ExperienceItemsComponent,
+    ExperienceEditModalComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

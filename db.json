@@ -1,4 +1,11 @@
 {
+  "user": [
+    {
+      "id": 1,
+      "email": "maty_arias@hotmail.com",
+      "password": "12345"
+    }
+  ],
   "exp": [
     {
       "id": 1,
@@ -26,6 +33,24 @@
       "to": "2013-10-21T13:28:06.419Z",
       "position": "VENDEDOR",
       "description": "Descripción de Tareas/Responsabilidades: Ventas y asesoramiento. Atención directa a clientes. Supervisión de existencias y elaboración de pedidos. Profundo conocimiento de los productos y sus atributos. Asesoramiento y orientación a clientes. Formación de nuevos vendedores. Trabajo en equipo. Recepción, control y descarga de pedidos. Rápido aprendizaje del stock de productos y sus propiedades resultando en un mayor desempeño a la hora de orientar un cliente, crear una necesidad y cerrar una venta. Dinámico y cooperador. Siempre dispuesto a lograr la superación personal utilizando como medio atención y asesoramiento de calidad, diversas estrategias de venta y reconocimiento de potenciales compradores, logrando de este modo la fidelidad y recomendación de los clientes obteniendo efecto positivo sobre las ventas."
+    },
+    {
+      "logo": "C:\\fakepath\\campanha-outubro-rosa-thyssenkrupp.jpg",
+      "company": "sssssssssssssss",
+      "from": "2023-02-05",
+      "to": "2023-02-09",
+      "position": "ssssssssss",
+      "description": "ssssssssssss",
+      "id": 4
+    },
+    {
+      "logo": "C:\\fakepath\\0e78e0-octubrerosalogo.jpg",
+      "company": "ssssfddfafasfaf",
+      "from": "2023-02-06",
+      "to": "2023-02-09",
+      "position": "fdsafdsafs",
+      "description": "fdsfdsfsfsdfs",
+      "id": 5
     }
   ]
 }

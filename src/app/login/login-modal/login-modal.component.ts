@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 //-------------------- ng-bootstrap ---------------------------//
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+
+//-------------------- AuthService ----------------------------//
+import { AuthService } from '../login-service/auth.service';
 
 @Component({
   selector: 'app-login-modal',
@@ -11,17 +15,16 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class LoginModalComponent {
 
-  // loginForm = new FormGroup ({
-  //   email: new FormControl(''),
-  //   password: new FormControl(''),
-  // })
 
   loginForm:FormGroup;
 
-  constructor(public activeModal:NgbActiveModal, private formBuilder: FormBuilder) {
+  constructor(public activeModal:NgbActiveModal, 
+    private formBuilder: FormBuilder, 
+    private router: Router,
+    private authService: AuthService) {
     this.loginForm= this.formBuilder.group({
-      password:['',[Validators.required, Validators.minLength(8)]],
       email:['',[Validators.required, Validators.email]],
+      password:['',[Validators.required, Validators.minLength(4)]],
    })
   }
 
@@ -45,16 +48,21 @@ export class LoginModalComponent {
     // Detenemos la propagación o ejecución del compotamiento submit de un form
     event.preventDefault; 
  
-    if (this.loginForm.valid){
-      
+    if (this.loginForm.valid){  
       // Llamamos a nuestro servicio para enviar los datos al servidor
+      this.authService.login(this.loginForm.get("email"), this.loginForm.get("password"))
       // También podríamos ejecutar alguna lógica extra
       alert("Todo salio bien ¡Enviar formulario!")
-    }else{
+    }
+    // if (this.authService.login(this.email, this.password)) {
+    //   alert("Wrong Credentials");
+    //   setTimeout(function() {
+    //   }.bind(this), 2500);
+    // }
+    else{
       // Corremos todas las validaciones para que se ejecuten los mensajes de error en el template     
       this.loginForm.markAllAsTouched(); 
     }
- 
   }
 
 }

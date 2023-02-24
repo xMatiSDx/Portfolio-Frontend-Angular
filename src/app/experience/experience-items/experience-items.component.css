@@ -33,7 +33,7 @@
     flex-direction: column; 
 }
 
-#experience-item .experience-item-company .h1 {
+#experience-item .experience-item-company .row {
     display: flex; 
     flex-wrap: nowrap;
 }

@@ -21,57 +21,59 @@
             <div class="form-header">
                 <h4 class="form-title" id="form-basic-title">Experience Registration Form</h4>
             </div>
-            <div class="form-body">
-                <form [formGroup]="experienceForm">
+            <div id="experience-form-body">
+                <form [formGroup]="experienceAddForm">
                     <div class="row">
-                        <div class="col-lg-3" style="display: flex;">
-                            <div class="form-control picture">
+                        <div class="col-lg-3">
+                            <div class="input-group-picture">
                                 <picture>
-                                    <img id="picture" src="./assets/images/profilepicture.jpg">
+                                    <img id="picture" [src]="img" *ngIf="img" (click)="pictureUpload()" [class.border-danger]="companyValid">
                                 </picture>
-                                <input id="logo" type="file" formControlName="logo" placeholder="Photo">
+                                <input formControlName="logo" id="logo" type="file" formControlName="logo" (change)="onFileChange($event)">
                             </div>
                         </div>
-                        <div class="input-group col-lg">
-                            <div class="row input-group-company">
-                                <div class="col-lg">
-                                    <label for="company">Company:</label>
-                                    <input formControlName="company" type="text" class="input" placeholder="Company's name"
-                                        formControlName="company" required [class.border-danger]="companyValid">
-                                    <div *ngIf="company?.errors && company?.touched">
-                                        <p *ngIf="company?.hasError('required')" class="error">
-                                            Please type Company's name.
-                                        </p>
-                                        <p *ngIf="company?.errors?.minlength" class="error">
-                                            Company's name should have 4 characters or more.
-                                        </p>
+                        <div class="col-lg-9 input-group-company">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!--- EXPERIENCE NAME --->
+                                    <div class="input-group-company-name mb-2">
+                                        <label class="me-2" for="company">Company:</label>
+                                        <input formControlName="company" type="text" class="input"
+                                            placeholder="Company's name" formControlName="company" required
+                                            [class.border-danger]="companyValid">
+                                        <div *ngIf="company?.errors && company?.touched">
+                                            <p *ngIf="company?.hasError('required')" class="error">
+                                                Please type Company's name.
+                                            </p>
+                                            <p *ngIf="company?.errors?.minlength" class="error">
+                                                Company's name should have 4 characters or more.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!---- EXPERIENCE DATE ---->
+                                    <div class="input-group-date mb-2">
+                                        <label class="me-2" for="from">From:</label>
+                                        <input formControlName="from" type="date" class="input me-4" placeholder=" "
+                                            formControlName="from" required [class.border-danger]="companyValid">
+                                        <label class="me-2" for="to">to:</label>
+                                        <input formControlName="to" type="date" class="input" placeholder=" "
+                                            formControlName="to" required [class.border-danger]="companyValid">
+                                    </div>
+                                    <!---- EXPERIENCE POSITION ---->
+                                    <div class=" input-group-position mb-2">
+                                        <label class="me-2" for="position">Position/Department:</label>
+                                        <input formControlName="position" type="text" class="input" placeholder=" "
+                                            formControlName="position" required [class.border-danger]="companyValid">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row input-group-date">
-                                <div class="col-sm">
-                                    <label for="from">From:</label>
-                                    <input formControlName="from" type="date" class="input" placeholder=" "
-                                        formControlName="from" required [class.border-danger]="companyValid">
-                                </div>
-                                <div class="col-sm">
-                                    <label for="to">to:</label>
-                                    <input formControlName="to" type="date" class="input" placeholder=" "
-                                        formControlName="to" required [class.border-danger]="companyValid">
-                                </div>
-                            </div>
-                            <div class="row input-group-position ">
-                                <div class="col-lg">
-                                    <label for="position">Position/Department:</label>
-                                    <input formControlName="position" type="text" class="input" placeholder=" "
-                                        formControlName="position" required [class.border-danger]="companyValid">
-                                </div>
-                            </div>
+                            <!--- EXPERIENCE DESCRIPTION --->
                             <div class="row input-group-description ">
-                                <div class="col-lg">
-                                    <label for="description">Description:</label>
+                                <div class="col-lg-12">
+                                    <label class="me-2" for="description">Description:</label>
                                     <input formControlName="description" type="text" class="input" placeholder=" "
-                                        formControlName="description" required maxlength="1000" autosize [class.border-danger]="companyValid">
+                                        formControlName="description" required maxlength="1000" autosize
+                                        [class.border-danger]="companyValid">
                                 </div>
                             </div>
                         </div>
@@ -79,9 +81,9 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn cancel-btn" (click)="isCollapsed = ! isCollapsed"
+                <button type="button" class="btn cancel-btn mb-2 me-2" (click)="onCancel()"
                     [attr.aria-expanded]="!isCollapsed">Cancel</button>
-                <button type="submit" class="btn login-btn" >Save</button>
+                <button type="submit" class="btn save-btn mb-2 me-2" (click)="onSubmit()">Save</button>
             </div>
         </div>
         <!--- EXPERIENCES ITEMS --->

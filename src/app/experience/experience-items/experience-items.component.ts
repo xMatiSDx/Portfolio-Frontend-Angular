@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
-/*------------------ Experience Service ------------------*/
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+/*------------------ Experience Items Service ------------------*/
 import { ExperienceItemsService } from '../service/experience-items.service';
+import { ExperienceEditModalComponent } from '../experience-edit-modal/experience-edit-modal.component';
 
 /*------------------ Experience Interface ------------------*/
 import { Experiences } from '../interface/experiences';
@@ -15,7 +18,7 @@ export class ExperienceItemsComponent implements OnInit {
 
   experiences: Experiences[] = [];
 
-  constructor(private expItemsService: ExperienceItemsService) { }
+  constructor(private expItemsService: ExperienceItemsService, private modalService: NgbModal) { }
   
   editContent() {
     console.log('Edit!')
@@ -30,5 +33,9 @@ export class ExperienceItemsComponent implements OnInit {
     this.experiences = exp;
     })
   }
+
+  openExpEditModal() {
+    const modalRef = this.modalService.open(ExperienceEditModalComponent);
+	}
 
 }

@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 /*------------------ Experience Interface ------------------*/
 import { Experiences } from '../interface/experiences';
 
+
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type':'application/json'
@@ -20,8 +21,22 @@ export class ExperienceService {
 
   constructor(private http: HttpClient) { }
 
-  /*------------------ Get Experiences from DB --------------------*/
-  getExp(): Observable<Experiences[]> {
-    return this.http.get<Experiences[]>(this.apiURL)
+
+  //  getById(id: Number): Observable<Experiences> {
+  //    return this.http.get<Experiences>(this.apiURL + `datail/${id}`)
+  //  }
+
+    getExp(): Observable<Experiences> {
+      return this.http.get<Experiences>(this.apiURL)
+    }
+
+  /*------------------ Summit Experiences form to DB --------------------*/
+  addExp(exp: Experiences): Observable<Experiences> {
+    return this.http.post<Experiences>(this.apiURL, exp, httpOptions)
   }
+
+
+
+  
+
 }
