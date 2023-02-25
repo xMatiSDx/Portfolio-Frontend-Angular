@@ -35,7 +35,12 @@ import { ContactComponent } from './contact/contact/contact.component';
     CoverComponent,
     EditButtonComponent,
     LoginButtonComponent,
-    LoginModalComponent
+    LoginModalComponent,
+    ExperienceComponent,
+    ExperienceItemsComponent,
+    ExperienceEditModalComponent,
+    FooterComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@
     background: black;
 }
 
-.contact:before {
+/* .contact:before {
     content: '';
     display: block;
     height: 100%;
@@ -19,7 +19,7 @@
     position: absolute;
     flex-wrap: nowrap!important;
     z-index: 0;
-}
+} */
 
 .contact-title {
     position: relative;
