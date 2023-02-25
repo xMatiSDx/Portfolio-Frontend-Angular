@@ -1,0 +1,55 @@
+<section class="contact">
+    <div class="container">
+    <div class="row contact-title">
+        <span class="back">CONTACT</span>
+        <span class="front">GET IN TOUCH</span>
+    </div>
+    <div class="row contact-body">
+        <div class="col-sm-4" style="padding: 15px;">
+            <div class="row contact-body-text">
+                <span>DON'T BE SHY.</span>
+                <P>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your vision.</P>
+            </div>
+            <div class="row contact-body-networks">
+                <ul>
+                    <li>
+                    <a class="nav-link btn" role="button" href="#">
+                        <fa-icon [icon]="['fab', 'github']"></fa-icon>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link btn" role="button" href="#">
+                        <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link btn" role="button" href="#">
+                        <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="contact-body-form">
+                    <form formGroup="contactForm">
+                        <div class="input-group">
+                            <div class="input-group-name">
+                                <input type="text" class="input" placeholder="Enter your Name" formControlName="name" required>
+                            </div>
+                            <div class="input-group-email">
+                                <input type="email" class="input" placeholder="Enter a valid email adress" formControlName="email" required>
+                            </div>
+                            <div class="input-group-message">
+                                <textarea type="text" class="input" placeholder="Enter your message" formControlName="message" required></textarea>
+                            </div>
+                        </div>
+                    </form>
+                <div class="contact-body-form-footer">
+                     <button type="submit" class="btn login-btn" (click)="onEnviar()">SUBMIT</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>

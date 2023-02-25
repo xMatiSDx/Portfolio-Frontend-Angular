@@ -1,0 +1,194 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.contact {
+    background: black;
+}
+
+.contact:before {
+    content: '';
+    display: block;
+    height: 100%;
+    border-left: 15px solid #1639D6;
+    background: #1639D6;
+    position: absolute;
+    flex-wrap: nowrap!important;
+    z-index: 0;
+}
+
+.contact-title {
+    position: relative;
+    width: auto;
+    text-align: center;
+}
+
+.contact-title .back {
+    /* position: absolute; */
+    font-size: 105px;
+    color: #111111;
+    font-weight: 800;
+    z-index: 1;
+    line-height: 115px;
+}
+
+.contact-title .front {
+    position: relative;
+    font-size: 35px;
+    color: #1639D6;
+    font-weight:800;
+    background: none;
+    z-index: 2;
+    top: -80px;
+}
+
+/*----------------------- RESPONSIVE OPTIONS -------------------------*/
+
+@media screen and (max-width: 540px) and (min-width: 415px) {
+    .contact-title .back {
+        font-size: 85px;
+        font-weight: 800;
+        z-index: 1;
+        line-height: 100px;
+    }   
+    .contact-title .front {
+        font-size: 30px;
+        font-weight:800;
+        background: none;
+        z-index: 2;
+        top: -70px;
+    }
+}
+
+@media screen and (max-width: 414px) and (min-width: 281px ) {
+    .contact-title .back {
+        font-size: 65px;
+        font-weight: 800;
+        z-index: 1;
+        line-height: 100px;
+    }   
+    .contact-title .front {
+        font-size: 25px;
+        font-weight:800;
+        background: none;
+        z-index: 2;
+        top: -65px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .contact-title .back {
+        font-size: 50px;
+        font-weight: 800;
+        z-index: 1;
+        line-height: 65px;
+    }   
+    .contact-title .front {
+        font-size: 20px;
+        font-weight:800;
+        background: none;
+        z-index: 2;
+        top: -45px;
+    }
+}
+
+/*------------------------------------------------------------*/
+
+/*------------------ contact body text -----------------------*/
+
+.contact-body {
+    padding: 10px;
+}
+
+.contact-body .contact-body-text {
+    padding: 15px;
+}
+
+.contact-body .contact-body-text span{
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.contact-body .contact-body-text p{
+    font-family: sans-serif;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+
+/*------------------ contact body networks -----------------*/
+
+.contact-body .contact-body-networks {
+    padding: 15px;
+}
+
+.contact-body .contact-body-networks ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-body .contact-body-networks li{
+    list-style: none;
+}
+
+.contact-body .contact-body-networks li a{
+    font-size: 25px;
+    color: white;
+}
+
+/*------------------------ contact body form ---------------------*/
+
+.contact-body .contact-body-form {
+    padding: 15px;
+}
+
+.contact-body .contact-body-form .input-group {
+    padding: 15px;
+    width: 100%;
+}
+
+.contact-body .contact-body-form .input-group .input-group-name, 
+.contact-body .contact-body-form .input-group .input-group-email, 
+.contact-body .contact-body-form .input-group .input-group-message {
+    padding: 15px;
+    width: 100%;
+}
+
+.contact-body .contact-body-form .input-group input, .contact-body .contact-body-form .input-group textarea {
+    padding: 5px;
+    border: 2px solid white;
+    width: 100%;
+    color: white;
+}
+
+.contact-body .contact-body-form .input-group .input-group-message textarea {
+    height: 150px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+
+/*------------------------------------- contact body form footer ------------------------------------------*/
+
+.contact-body .contact-body-form .contact-body-form-footer {
+    padding: 15px;
+}
+
+.contact-body .contact-body-form .contact-body-form-footer button{
+    background-color: #1639D6;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+

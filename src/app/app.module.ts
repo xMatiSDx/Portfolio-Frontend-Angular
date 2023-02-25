@@ -14,6 +14,7 @@ import { CoverComponent } from './cover/cover/cover.component';
 import { EditButtonComponent } from './buttons/edit-button/edit-button.component';
 import { LoginButtonComponent } from './buttons/login-button/login-button.component';
 import { LoginModalComponent } from './login/login-modal/login-modal.component';
+import { ContactComponent } from './contact/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LoginModalComponent } from './login/login-modal/login-modal.component';
     CoverComponent,
     EditButtonComponent,
     LoginButtonComponent,
-    LoginModalComponent
+    LoginModalComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
