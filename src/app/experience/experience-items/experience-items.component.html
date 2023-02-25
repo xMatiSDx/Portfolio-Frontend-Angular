@@ -1,0 +1,56 @@
+<div id="experience-item" class="container">
+    <div class="row" *ngFor="let exp of experiences">
+        <div class="col-lg-3">
+            <div class="experience-item-picture">
+                <picture>
+                    <img src={{exp.logo}}>
+                </picture>
+                <!--- CHANGE EXPERIENCE PICTURE --->
+                <app-edit-button type="cam-box" (btnClick)="changePicture()" figure="camera"></app-edit-button>
+            </div>
+        </div>
+        <!--- EXPERIENCES --->
+        <div class="col-lg-9 experience-item-company">
+            <div class="row" >
+                <div class="col-lg-12">
+                    <!--- EXPERIENCE NAME --->
+                    <div class="experience-item-company-name" >
+                        <span>
+                            <b>{{exp.company}}</b>
+                        </span>
+                        <!--- EXPERIENCE DELETE BUTTON --->
+                        <app-edit-button type="edit-box" (btnClick)="editContent()" figure="remove"></app-edit-button>
+                        <!--- EXPERIENCE EDIT BUTTON --->
+                        <app-edit-button type="edit-box" (btnClick)="openExpEditModal()" figure="pencil"></app-edit-button>
+                    </div>
+                    <!---- EXPERIENCE DATE ---->
+                    <div class="experience-item-company-date">
+                        <span class="experience-item-company-date-from me-2">
+                            FROM:{{exp.from}}
+                        </span>
+                        <span class="experience-item-company-date-to">
+                            TO:{{exp.to}}
+                        </span>
+                    </div>
+                    <!---- EXPERIENCE POSITION ---->
+                    <div class="experience-item-company-position">
+                        <span>
+                            {{exp.position}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--- EXPERIENCE DESCRIPTION --->
+            <div class="row experience-item-description">
+                <div class="col-lg-12">
+                    <div class="text">
+                        <span>
+                            <p> {{exp.description}}</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

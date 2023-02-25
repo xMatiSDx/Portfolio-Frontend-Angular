@@ -1,0 +1,275 @@
+/*------------- FORM --------------*/
+
+/* EXPERIENCE EDIT FORM DIV */
+.experienceEditForm {
+    background: #111111;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.experienceEditForm .form-body {
+
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* EXPERIENCE EDIT FORM TITLE */
+.experienceEditForm .form-title {
+    text-align: center; 
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.btn-close-modal {
+    color: white;
+    font-size: 20px;
+}
+
+.btn-close-modal:hover {
+    color: red;
+}
+
+/* EXPERIENCE INPUT GROUP */
+
+.experienceEditForm .input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.experienceEditForm div .col-lg {
+    display:flex; 
+    flex-direction: column;
+}
+
+.input-group .row .col-lg {
+    display:inline-block
+}
+
+.input-group {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 55px;
+    padding-left: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-group div div input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid white;
+    background: #111111;
+}
+
+.input-group div div label {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: -13px;
+}
+
+/*--- EXPERIENCE EDIT FORM CSS ---*/
+#experience-form-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*---------- EXPERIENCE EDIT FORM PICTURE ----------*/
+#experience-form-body .row .col-lg-3 {
+    display:flex; 
+    align-self:center; 
+    justify-content: center; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+#experience-form-body .row .col-lg-3 .input-group-picture {
+    display: block; 
+    position:relative
+}
+
+#experience-form-body .row .col-lg-3 .input-group-picture img {
+    border-bottom-left-radius: 50%; 
+    border-top-right-radius: 50%; 
+    border-bottom-right-radius: 50%; border-top-left-radius: 50%; 
+    height: 168px; 
+    width: 168px
+}
+
+#experience-form-body .row .col-lg-3 .input-group-picture img:hover {
+    cursor:pointer ;
+}
+
+#experience-form-body .row .col-lg-3 .input-group-picture input {
+    display: none;
+}
+
+
+
+/*---------- EXPERIENCE EDIT FORM COMPANY ----------*/
+#experience-form-body .input-group-company {
+    align-content: center; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+#experience-form-body .input-group-company .row {
+    display: flex; 
+    flex-wrap: nowrap;
+}
+
+#experience-form-body div .col-lg-12 {
+    display:flex; 
+    justify-content: center; 
+    align-content: center; 
+    flex-direction: column;
+}
+
+#experience-form-body div .col-lg-12 .input-group-company-name {
+    display: flex; 
+    position: relative; 
+    align-items: center;
+    text-align: start; 
+    width: 100%;
+}
+
+#experience-form-body div .col-lg-12 .input-group-company-name label {
+    display: block; 
+    position: relative; 
+    text-align: start; 
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+#experience-form-body .input-group-company-name input{
+    position: relative; 
+    text-align: center; 
+    width: 50%; 
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: #111111;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px white;
+}
+
+#experience-form-body .input-group-company-name p {
+    color: red;
+    font-size: 13px;
+}
+
+#experience-form-body .input-group-company-name input::placeholder {
+    color: white;
+}
+
+
+/*---------- EXPERIENCE EDIT FORM DATE ----------*/
+#experience-form-body .input-group-date {
+    display: block; 
+    position: relative; 
+    text-align: start; 
+    width: 100%; 
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+#experience-form-body .input-group-date input{
+    position: relative; 
+    text-align: center; 
+    width: 20%; 
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: #111111;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px white;
+}
+
+/*---------- EXPERIENCE EDIT FORM POSITION ----------*/
+#experience-form-body .input-group-position {
+    display: block; 
+    position: relative; 
+    text-align: start; 
+    width: 100%; 
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+#experience-form-body .input-group-position input{
+    position: relative; 
+    text-align: start; 
+    width: 40%; 
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: #111111;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px white;
+}
+
+/*--- EXPERIENCE EDIT FORM DESCRIPTION ---*/
+#experience-form-body .input-group-description {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#experience-form-body .input-group-description .col-lg-12 {
+    align-content: center; 
+    display:flex; 
+    justify-content: center;
+}
+
+#experience-form-body .input-group-description .col-lg-12 label {
+    display: block; 
+    position: relative; 
+    text-align: start; 
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+#experience-form-body .input-group-description .col-lg-12 input {
+    display: block; 
+    position: relative; 
+    text-align: justify;
+    width: 95%; 
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: #111111;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px white;
+}
+
+/*--- EXPERIENCE EDIT FORM CANCEL BTN ---*/
+.modal-footer .cancel-btn{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    width: auto;
+}
+
+.modal-footer .save-btn{
+    background-color: #1639D6;
+    color: white;
+    font-weight: 600;
+    width: auto;
+}

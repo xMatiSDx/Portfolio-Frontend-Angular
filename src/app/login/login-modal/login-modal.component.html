@@ -5,20 +5,33 @@
 	</a>
 </div>
 <div class="modal-body">
-	<form formGroup="loginForm">
+	<form [formGroup]="loginForm">
 		<div class="input-group">
 			<div class="input-group-email">
-				<input type="text" class="input" placeholder=" " formControlName="email" required>
+				<input formControlName="email" type="email" class="input" placeholder=" " formControlName="email" required [class.border-danger]="emailValid">
 				<label class="placeholder">Email</label>
+				<div *ngIf="email?.errors && email?.touched">
+					<p *ngIf="email?.hasError('required')" class="error">
+					  Por favor ingresar un Email Valido.
+					</p>
+				</div>
 			</div>
 			<div class="input-group-password">
-				<input type="password" class="input" placeholder=" " formControlName="password" required>
+				<input formControlName="password" type="password" class="input" placeholder=" " formControlName="password" required [class.border-danger]="passwordValid">
 				<label class="placeholder">Password</label>
+				<div *ngIf="password?.errors  && password?.touched">
+					<p *ngIf="password?.hasError('required')" class="error">
+					  El password es requerido.
+					</p>
+					<p *ngIf="password?.errors?.minlength" class="error">
+					  El password debe ser de 8 o más caracteres.
+					</p>
+				</div>
 			</div>
 		</div>
 	</form>
 </div>
 <div class="modal-footer">
-	<button type="button" class="btn cancel-btn" (click)="activeModal.close('Close click')">Cancel</button>
+	<button type="button" class="btn cancel-btn" (click)="activeModal.close()">Cancel</button>
 	<button type="submit" class="btn login-btn" (click)="onEnviar($event)">Login</button>
 </div>

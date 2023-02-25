@@ -1,3 +1,6 @@
-<a class="nav-link login-btn btn" role="button" (click)="openLoginModal()">
+<a class="nav-link login-btn btn" role="button" (click)="openLoginModal()" *ngIf="!authService.logIn">
     <fa-icon icon="sign-in"></fa-icon>
+</a>
+<a class="nav-link login-btn btn" role="button" (click)="logOut()" *ngIf="authService.logIn">
+    <fa-icon icon="sign-out"></fa-icon>  
 </a>

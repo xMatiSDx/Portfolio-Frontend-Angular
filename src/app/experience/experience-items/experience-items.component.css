@@ -1,0 +1,104 @@
+/*--- EXPERIENCE ITEMS CSS ---*/
+#experience-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*---------- EXPERIENCE ITEM PICTURE ----------*/
+#experience-item .row .col-lg-3 {
+    display:flex; 
+    align-self:center; 
+    justify-content: center; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+#experience-item .row .col-lg-3 .experience-item-picture {
+    display: block; 
+    position:relative
+}
+
+#experience-item .row .col-lg-3 .experience-item-picture img {
+    border-bottom-left-radius: 50%; 
+    border-top-right-radius: 50%; 
+    border-bottom-right-radius: 50%; border-top-left-radius: 50%; 
+    height: 168px; 
+    width: 168px
+}
+
+/*---------- EXPERIENCE ITEM COMPANY ----------*/
+#experience-item .experience-item-company {
+    align-content: center; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+#experience-item .experience-item-company .row {
+    display: flex; 
+    flex-wrap: nowrap;
+}
+
+#experience-item div .col-lg-12 {
+    display:flex; 
+    justify-content: center; 
+    align-content: center; 
+    flex-direction: column;
+}
+
+#experience-item div .col-lg-12 .experience-item-company-name {
+    display: flex; 
+    position: relative; 
+    align-items: center;
+    text-align: start; 
+    width: 100%;
+}
+
+#experience-item div .col-lg-12 .experience-item-company-name span {
+    width: 100%;
+    color: white;
+    font-size: 25px;
+}
+
+/*---------- EXPERIENCE ITEM DATE ----------*/
+#experience-item .experience-item-company-date {
+    display: block; 
+    position: relative; 
+    text-align: start; 
+    width: 100%; 
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+/*---------- EXPERIENCE ITEM POSITION ----------*/
+#experience-item .experience-item-company-position {
+    display: block; 
+    position: relative; 
+    text-align: start; 
+    width: 100%; 
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+/*--- EXPERIENCE DESCRIPTION ---*/
+#experience-item .experience-item-description {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#experience-item .experience-item-description .col-lg-12 {
+    align-content: center; 
+    display:flex; 
+    justify-content: center;
+}
+
+#experience-item .experience-item-description .col-lg-12 .text {
+    display: block; 
+    position: relative; 
+    text-align: justify;
+}
+
+#experience-item .experience-item-description .col-lg-12 span {
+    color: white;
+}

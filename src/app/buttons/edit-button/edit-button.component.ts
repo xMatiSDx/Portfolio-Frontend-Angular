@@ -1,6 +1,7 @@
 import { Component, Output, Input, EventEmitter } from '@angular/core';
 import { FaIconLibrary, FaConfig } from '@fortawesome/angular-fontawesome';
 import { faCamera, faPencil, faAdd, faRemove } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from 'src/app/login/login-service/auth.service';
 
 
 @Component({
@@ -15,7 +16,7 @@ export class EditButtonComponent {
   @Input() type:string = "";
   
 
-  constructor(private library: FaIconLibrary, private faConfig: FaConfig) {
+  constructor(private library: FaIconLibrary, private faConfig: FaConfig, public authService:AuthService) {
     library.addIcons(faCamera, faPencil, faAdd, faRemove);
     faConfig.fixedWidth = true;
    }
@@ -26,5 +27,6 @@ export class EditButtonComponent {
 
   ngOnInit(): void {
   }
+
 
 }

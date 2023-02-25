@@ -1,0 +1,182 @@
+.footer {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer .container {
+    background-color: black;
+    padding: 0;
+}
+
+/*--------------- CONTACT CARD CSS ------------------*/
+
+.contact-card {
+    height: auto;
+    background-color: #1639D6;
+    padding: 12px 12px;
+    border: solid 1px white;
+}
+
+.contact-card .contact-card-body #contact-card-logo {
+    font-size: 56px;
+    color: white;
+    float: left;
+    margin-right: 16px;
+    text-align: center;
+}
+
+
+
+.contact-card .contact-card-body .contact-card-title {
+    font-size: 17px;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 20px 0 0 0;
+    line-height: 1;
+}
+
+.contact-card .contact-card-body .contact-card-text {
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    line-height: 1.14;
+}
+
+.contact-card-buttons {
+    margin-top: 2px;
+}
+
+@media screen and (min-width: 1000px) {
+    .contact-card-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact-card-buttons ul {
+    border-bottom: 0;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 16px 0;
+    font-size: 14px;
+}
+
+.contact-card .contact-card-buttons li {
+    display: inline;
+    padding: 4px 0;
+    margin: 0;
+}
+
+.contact-card .contact-card-buttons a{
+    display: inline-block;
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+a.contact-card-button {
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 48%;
+}
+
+.contact-card .contact-card-buttons a.card-button-filled {
+    background: black;
+    color: white;
+    margin-right: 5px;
+    border: solid 2px white;
+}
+
+.contact-card .contact-card-buttons a.card-button-outline {
+    background: #1639D6;
+    color: black;
+    margin-right: 2px;
+    border: solid 2px black;
+}
+
+.contact-card .contact-card-buttons a.card-button-filled:hover {
+    background: #1639D6;
+}
+
+.contact-card .contact-card-buttons a.card-button-outline:hover {
+    background: black;
+    color: white;
+    border: solid 2px white;
+}
+
+/*--------------- SOCIALMEDIAS CARD CSS ------------------*/
+
+.socialmedia-card {
+    background-color: black;
+    padding: 12px 12px;
+}
+
+.socialmedia-card .socialmedia-card-title{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.socialmedia-card .socialmedia-card-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.socialmedia-card .socialmedia-card-buttons li a{
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.socialmedia-card .socialmedia-card-text {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.socialmedia-card .socialmedia-card-footer .socialmedia-card-footer-text {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*--------------- USEFUL LINKS CARD CSS ------------------*/
+
+.usefulinks-card {
+    background-color: black;
+    padding: 12px 12px;
+}
+
+.usefulinks-card .usefulinks-card-body .usefulinks-card-title{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.usefulinks-card .usefulinks-card-body .usefulinks-card-links{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.usefulinks-card .usefulinks-card-body .usefulinks-card-links li {
+    margin: 3px;
+}
+
+.usefulinks-card .usefulinks-card-body .usefulinks-card-links li a{
+    color: white;
+    text-decoration: none;
+}
